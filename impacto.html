@@ -5,32 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index_proyecto.html">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Impacto</title>
 </head>
 <body>
     <header>
-        <h1>Big Data: Transformando el Mundo a través de los Datos</h1>
+        <div class="logo">
+            <img src="img/logo.webp" alt="Logo">
+          </div>
+          <h1>Big Data: Transformando el Mundo a través de los Datos</h1>
         <nav>
-            <ul>
-                <li><a href="#informacion" class="pagelink">Información</a></li>
-                <li><a href="#impacto" class="pagelink">Impacto</a></li>
+            <ul class="menu">
+              <li><a href="index_proyecto.html">Información</a></li>
+              <li><a href="impacto.html">Impacto</a></li>
+              <li><a href="situacion_actual.html">Situación Actual</a></li>
+              <li><a href="vision_futuro.html">Visión a Futuro</a></li>
+              <li><a href="#">Videos</a></li>
+              <li><a href="#">Galería</a></li>
+              <li class="has-submenu">
+                <a href="#">Interacción</a>
+                <ul class="submenu">
+                  <li><a href="#">- Blog</a></li>
+                  <li><a href="#">- Contacto</a></li>
+                  <li><a href="#">- Cuestionario</a></li>
+                  <li><a href="#">- Chat</a></li>
+                </ul>
+              </li>
+              <li class="has-submenu">
+                <a href="#">Ayuda</a>
+                <ul class="submenu">
+                  <li><a href="#">- Preguntas Frecuentes</a></li>
+                  <li><a href="#">- Grupos de Ayuda</a></li>
+                  <li><a href="#">- Redes Sociales</a></li>
+                </ul>
+              </li>
             </ul>
-        </nav>
+          </nav>
+        <button class="sidebar-btn">&#9776;</button>
     </header>
-    
+    <script src="script.js"></script> 
     <section class="cont_impacto">
-        <h1>Impacto</h1>
+        <h1 class="sectitle">Impacto</h1>
         <h2>Estadisticas</h2>
         <p>El big data ha estado creciendo de forma exponencial, por lo tanto su estadística mas notoria es la inversión que se le ha estado dando a este</p>
-        <img src="estadisti.webp" alt="estadisti"> </div>
+        <img src="img/estadisti.webp" alt="estadisti"> </div>
     </section>
+
+    <article>
+        <h3>Enlaces a Recursos Confiables</h3>
+        <ul>
+        <li><a href="https://www.sas.com/es_mx/insights/big-data/what-is-big-data.html#:~:text=El%20t%C3%A9rmino%20%22big%20data%22%20se,existido%20desde%20hace%20mucho%20tiempo.">Enlace 1</a></li>
+        <li><a href="https://es.statista.com/estadisticas/875229/inversion-mundial-en-data-centers/">Enlace 2</a></li>
+        <!-- Agrega más enlaces según sea necesario -->
+        </ul>
+    </article>
 
     <section class="inflsociedad">
         <article class="videox">
             <h3>Influencia en la sociedad</h3>
             <iframe src="https://www.youtube.com/embed/jYLDhWcHHe8?si=VYQFxdkI7UKvheNt" frameborder="0"></iframe>
-            <p>El impacto del Big Data en la sociedad ha sido significativo y multifacético. Desde la transformación de la atención médica hasta la optimización de la logística empresarial, el Big Data ha revolucionado numerosos aspectos de nuestra vida cotidiana.</p>
         </article>
+        <div class="vidtext">
+            <p>El impacto del Big Data en la sociedad ha sido significativo y multifacético. Desde la transformación de la atención médica hasta la optimización de la logística empresarial, el Big Data ha revolucionado numerosos aspectos de nuestra vida cotidiana.</p></div>
     </section>
+    <footer>
+        <p>&copy; 2024 Big Data Inc. Todos los derechos reservados.</p>
+        <p> 184944 & 184997 </p>
+    </footer>
     </body>
 </html>
