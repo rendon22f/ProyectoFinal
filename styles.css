@@ -318,3 +318,51 @@ footer {
     height: auto;
     display: inline-block; /* Para que el contenedor tenga el tamaño de la imagen */
   }
+  #videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+}
+
+.video {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.video h2 {
+    margin-top: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.gallery {
+  display: flex;
+}
+
+
+
+.image {
+  flex: 1;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Ajuste del tamaño total con borde */
+}
+
+.image img {
+  display: block;
+  width: 100%; /* Hacer que la imagen ocupe todo el ancho del contenedor */
+  
+
+height: auto;
+}
