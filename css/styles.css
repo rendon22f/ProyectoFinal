@@ -225,11 +225,19 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
+.instagram-link {
+  color: #000; /* Cambia el color del enlace a negro */
+  text-decoration: none; /* Elimina la subrayado del enlace */
+}
+
+.instagram-link:hover {
+  color: #000; /* Cambia el color del enlace cuando se pasa el mouse sobre él */
+}
+
 .contenedor-padre {
     display: flex;
-    
   }
-  
   .contenedor1 {
     width: 25%; /* Ancho del primer contenedor */
     margin-right: 5px; /* Espacio entre los contenedores */
