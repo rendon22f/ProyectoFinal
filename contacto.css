@@ -1,0 +1,368 @@
+
+body {
+  margin: 0;
+  font-family: Poppins;
+}
+
+header {
+  background-color: #37B8B4;
+  display: flex;
+  flex-direction: column; /* Para apilar elementos verticalmente */
+  align-items: center; /* Para centrar horizontalmente */
+  padding: 10px 20px;
+  position: relative; /* Ajuste de posición */
+  z-index: 2; /* Ajuste de índice z */
+}
+/* Estilos  de la lista de navegacion */
+.logo img {
+  height: 40px; /* Ajusta el tamaño del logo según tu necesidad */
+}
+
+h1 {
+  margin-top: 1vw; /* Espacio encima del título */
+  color: white;
+}
+
+
+
+.sectitle{
+  padding: 20px; /* Ajusta el valor según tu preferencia */
+  color: #333;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex; /* Cambio a flexbox */
+  justify-content: center; /* Para centrar los elementos */
+}
+
+nav ul li {
+  display: inline-block;
+  margin-left: 20px;
+  position: relative; /* Para las subsecciones */
+}
+
+nav ul li a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+  color: aqua;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #37B8B4;
+  top: 100%;
+  left: 0;
+  padding: 10px;
+  z-index: 1; /* Ajuste de índice z */
+}
+
+.submenu a {
+  color: white; /* Color de la letra para las subsecciones */
+}
+
+.submenu li {
+  margin: 5px 0;
+}
+
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+.sidebar-btn {
+  font-size: 20px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+  border-radius: 1vw;
+  border-color: aqua;
+  position: relative; /* Ajuste de posición */
+  z-index: 2; /* Ajuste de índice z */
+}
+
+/* Estilos para pantallas pequeñas */
+@media screen and (max-width: 800px) {
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 50px; /* Ajusta según el tamaño de tu barra de navegación */
+    left: 0;
+    background-color: #37B8B4;
+    width: 100%;
+    text-align: center;
+    z-index: 1; /* Para que esté por encima del botón del sidebar */
+  }
+
+  nav ul.show {
+    display: flex;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .has-submenu {
+    position: static;
+  }
+
+  .submenu {
+    position: static;
+    display: block;
+    background-color: transparent;
+  }
+
+  .sidebar-btn {
+    display: block; /* Muestra el botón en pantallas pequeñas */
+    position: absolute; /* Ajuste de posición */
+    top: 10px; /* Ajuste de posición */
+    right: 20px; /* Ajuste de posición */
+  }
+}
+
+
+/* Fin de Estilos paar hover de la lista de navegacion */
+
+section {
+  padding: 20px;
+}
+
+h2 {
+  padding: 2vw;
+  color: #333;
+}
+
+article {
+  margin-bottom: 20px;
+  padding:2vw;
+}
+
+.cont_impacto{
+  background-color: white;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  word-wrap: break-word;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.inflsociedad{
+  background-color: white;
+  display: flex;
+  position: relative;
+  max-width: 100%;
+}
+
+.videox{
+  flex-grow: 1;
+  max-width: 100%;
+  height: auto;
+  padding: 1rem;
+  background-color: #D1EEF0;
+  margin: 0 auto;
+}
+
+.vidtext{
+  flex-grow: 1;
+  display: flex;
+  padding: 10px 20px;
+  background-color: #D1EEF0;
+  line-height: 1.5rem;
+  margin: 0 auto ;
+  max-width: 100%;
+  height: auto;
+  
+}
+
+@media screen and (max-width: 601px) {
+  .inflsociedad {
+    flex-direction: column;
+    word-wrap: break-word;
+  }
+  
+  .videox, .vidtext {
+    width: 100%;
+    padding: 0 0 10px 10px;
+    margin: 0;
+  }
+
+  .vidtext{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    font-size: 100%;
+  }
+
+  iframe{
+    max-width: 100%;
+    height: auto;
+  }
+  .column img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+
+
+footer {
+  background-color: #37B8B4;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+.contenedor-padre {
+    display: flex;
+    
+  }
+  
+  .contenedor1 {
+    width: 25%; /* Ancho del primer contenedor */
+    margin-right: 5px; /* Espacio entre los contenedores */
+  }
+  
+  .contenedor2 {
+    width: 75%; /* Ancho del segundo contenedor */
+  }
+  .contenido1
+  {
+    width :55%;
+  }
+.contenido2 {
+    padding: 10px;
+  width: 45%;
+
+}
+  
+  .objetivos h1{
+    font: 100%;
+
+  }
+  .objetivos {
+    justify-content: space-between; /* Distribuye los elementos uniformemente a lo largo del contenedor */
+    display: flex;
+  }
+  
+  .columna {
+    width: 50%; /* Ancho de cada columna */
+    padding: 10px; /* Espacio interno de cada columna */
+    margin: 0; /* Elimina el margen */
+
+  }
+  
+  .navbar-toggler{
+    background-color: aquamarine;
+  }
+
+  .columnas {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px; /* Margen negativo para compensar el padding de las columnas */
+  }
+  
+  .column {
+    flex: 1;
+    padding: 0 15px; /* Espacio entre columnas */
+  }
+  
+  /* Establece un ancho máximo para las imágenes */
+
+  .column img {
+    max-width: 50%;
+  height: auto;
+  }
+
+  .caja {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .caja h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  .caja p {
+    color: #666;
+    line-height: 1.6;
+  }
+
+  .imagen-container {
+    padding: 2em;
+    background-color:#D1EEF0;
+    text-align: center; /* Para centrar horizontalmente */
+  }
+  
+  .imagen-bigdata {
+    max-width: 95%;
+    height: auto;
+    display: inline-block; /* Para que el contenedor tenga el tamaño de la imagen */
+  }
+  #videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+}
+
+.video {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.video h2 {
+    margin-top: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.gallery {
+  display: flex;
+}
+
+
+
+.image {
+  flex: 1;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box; /* Ajuste del tamaño total con borde */
+}
+
+.image img {
+  display: block;
+  width: 100%; /* Hacer que la imagen ocupe todo el ancho del contenedor */
+  
+
+height: auto;
+}
